@@ -14,7 +14,7 @@ typedef struct Line {
 } Line;
 
 int main(int argc, char *argv[]) {
-	//initialize the proper SDL subsystem to be used
+	//initialize the appropriate SDL subsystem to be used
 	init();
 
 	SDL_Window *window = createWindow(); //create a window to present the rendered image
@@ -29,6 +29,7 @@ int main(int argc, char *argv[]) {
 	int center[2] = {WIDTH / 2, HEIGHT / 2};
 
 	//mark the beginning of the animation
+	//this is probably one of the few instances where goto is advantageous
 	BEGIN:
 
 	//set the background color to {199, 0, 57, 255}
