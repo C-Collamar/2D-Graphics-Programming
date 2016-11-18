@@ -1,3 +1,4 @@
+//this function initializes SDL video subsystem
 void init(void) {
 	SDL_Init(SDL_INIT_VIDEO);
 }
@@ -39,6 +40,7 @@ void destroyRenderer(SDL_Renderer **ren) {
 	SDL_DestroyRenderer(*ren);
 }
 
+//this function deallocates memory allocated at the beginning of the program
 void cleanup(SDL_Window **win, SDL_Renderer **ren) {
 	destroyWindow(win);
 	destroyRenderer(ren);
