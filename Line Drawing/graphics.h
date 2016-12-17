@@ -1,5 +1,5 @@
 void drawLine(SDL_Renderer **renderer, int A[2], int B[2]) {
-	SDL_Rect rect = {0, 0, 1, 1};
+	SDL_Point point;
 
 	int dx = B[0] - A[0];
 	int dy = B[1] - A[1];
@@ -19,8 +19,8 @@ void drawLine(SDL_Renderer **renderer, int A[2], int B[2]) {
 	for(k = 0; k < steps; ++k) {
 		x += xIncrement;
 		y += yIncrement;
-		rect.x = x;
-		rect.y = y;
-		SDL_RenderFillRect(*renderer, &rect);
+		point.x = x;
+		point.y = y;
+		SDL_RenderDrawPoint(*renderer, point.x, point.y);
 	}
 }
