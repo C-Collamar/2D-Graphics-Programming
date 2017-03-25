@@ -1,4 +1,4 @@
-This program demonstrates visual line manipulatoins generated through the application of [DDA algorithm][1]. (I'm planning on studying [Bresenham's line algorithm][3] as well, but I currently don't have the time.)
+This program illustrates lines rendered using the [DDA algorithm][1]. (I'm planning on studying [Bresenham's line algorithm][3] as well, but I currently don't have the time.)
 
 ![](https://github.com/C-Collamar/2D-Graphics-Programming/blob/master/Line%20Drawing/Line_Drawing.gif)
 
